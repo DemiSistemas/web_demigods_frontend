@@ -33,14 +33,12 @@ const ZONAS_CAMPAMENTO = [
   {
     id: "itaca",
     nombre: "Ítaca",
-    subtitulo: "El Hogar de la Legión y las Asambleas",
+    subtitulo: "Aventuras en miniatura",
     icono: Castle,
     colorBorde: "#B8520A",
-    descripcion: "El punto de encuentro sagrado donde se toman las decisiones del campamento, se celebran las victorias y se entonan los cantos alrededor del fogón.",
+    descripcion: "El punto de encuentro sagrado donde se enbarcaran en aventuras, con la posibilidad de lograr grandes cosas, o caer en el intento.",
     actividades: [
-      "Asambleas generales del Campamento y anuncios de misiones.",
-      "Representaciones de Nueva Roma y la Legión.",
-      "Fogón nocturno, trivias mitológicas y entrega de puntos de cabaña."
+      "Partidas de rol para jugar en el momento."
     ]
   }
 ];

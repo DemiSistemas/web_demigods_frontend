@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Demigods Arg — Frontend
 
-## Getting Started
+¡Bienvenido a la bitácora de código de **Demigods Arg**! Este repositorio contiene la interfaz web pública de la pagina web
 
-First, run the development server:
+La aplicación está diseñada con una estética rústica y temática de cabaña de madera, con microinteracciones y animaciones 3D para hacerlo mas interactivo y divertido.
 
+---
+
+## Estructura y Secciones del Sitio
+
+El sitio está organizado sin barra superior tradicional para favorecer la inmersión interactiva desde el patio central:
+
+1. **Inicio (`/`)**: 
+   * **Ventana de Bienvenido (3D)**: Ventana interactiva de madera abatible que revela las secciones *¿Qué es Demigods Arg?* y *¿Por qué hacemos todo esto?*.
+   * **Portales Principales**: 4 tarjetas rústicas estilo 3D para navegar hacia *Campamento*, *Tienda*, *Galería* y *Conócenos*.
+2. **Conócenos (`/conocenos`)**: 
+   * Resumen de historia del campamento (*¿Cómo empezó todo?*)
+3. **Campamento (`/campamento`)**: 
+   * Explicación de *¿Qué hacemos en el campamento?* y mapa de las 3 zonas principales: **Ogigia** (rol, juegos de mesa, descanso), **Flota** (softcombat, combate y estrategia) e **Íthaca** (mesa de rol).
+4. **Galería de Fotos (`/galeria`)**: 
+   * Álbum visual organizado por eventos presenciales con vista ampliada de fotografías mediante modal.
+5. **Tienda (`/tienda`)**: 
+   * Catálogo del *Mercado Mestizo* con accesorios, indumentaria y entradas para próximos presenciales.
+
+---
+
+## Tecnologías Utilizadas
+
+* **Framework**: [Next.js](https://nextjs.org/) (App Router, React 19 / Next 15).
+* **Lenguaje**: TypeScript.
+* **Estilos**: Tailwind CSS + Inline Styles de React para garantizar el renderizado preciso de transformaciones y perspectivas 3D en todos los navegadores.
+* **Iconografía**: [Lucide React](https://lucide.dev/).
+* **Despliegue**: [Vercel](https://vercel.com/).
+
+---
+
+## 🚀 Guía de Instalación y Ejecución Local
+
+pueden clonar y ejecutar este proyecto en su entorno local:
+
+### 1. Clonar el repositorio
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone [https://github.com/TU_USUARIO/demigods-front.git](https://github.com/TU_USUARIO/demigods-front.git)
+cd demigods-front
