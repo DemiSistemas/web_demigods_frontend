@@ -1,20 +1,27 @@
-import type { NextConfig } from "next";
+import type { Config } from "tailwindcss";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    agentFeedback: true,
-  },
-  cacheComponents: true,
-  partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
+const config: Config = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        madera: {
+          oscura: "#3E2723", 
+          clara: "#5D4037",  
+        },
+        fuego: "#FF6F00",    
+        dorado: "#D4AF37",
+        pergamino: "#F5EFEB" 
       },
+      fontFamily: {
+        mitologica: ['var(--font-cinzel)', 'serif'],
+        texto: ['var(--font-montserrat)', 'sans-serif'],
+      }
     },
   },
+  plugins: [],
 };
-
-export default nextConfig;
+export default config;

@@ -1,26 +1,70 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colores base universales del Campamento */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --madera-oscura: #3E2723;
+  --madera-clara: #5D4037;
+  --fuego: #FF6F00;
+  --dorado: #D4AF37;
+  --pergamino: #F5EFEB;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #3E2723 !important;
+  color: #F5EFEB !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clases de colores de reserva por si falla la compilación JIT */
+.bg-madera-oscura { background-color: #3E2723 !important; }
+.bg-madera-clara { background-color: #5D4037 !important; }
+.bg-fuego { background-color: #FF6F00 !important; }
+.bg-dorado { background-color: #D4AF37 !important; }
+.bg-pergamino { background-color: #F5EFEB !important; }
+
+.text-madera-oscura { color: #3E2723 !important; }
+.text-madera-clara { color: #5D4037 !important; }
+.text-fuego { color: #FF6F00 !important; }
+.text-dorado { color: #D4AF37 !important; }
+.text-pergamino { color: #F5EFEB !important; }
+
+.border-madera-oscura { border-color: #3E2723 !important; }
+.border-madera-clara { border-color: #5D4037 !important; }
+.border-fuego { border-color: #FF6F00 !important; }
+.border-dorado { border-color: #D4AF37 !important; }
+
+.font-mitologica { font-family: var(--font-cinzel), serif !important; }
+.font-texto { font-family: var(--font-montserrat), sans-serif !important; }
+
+/* Animación y Perspectiva 3D para la Ventana */
+.marco-3d {
+  perspective: 1200px;
+}
+
+.puerta-madera {
+  background-color: #5D4037 !important;
+  border-color: #3E2723 !important;
+  transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.puerta-izquierda {
+  transform-origin: left center;
+}
+
+.puerta-derecha {
+  transform-origin: right center;
+}
+
+.puerta-izquierda-abierta {
+  transform: rotateY(-115deg);
+}
+
+.puerta-derecha-abierta {
+  transform: rotateY(115deg);
 }
